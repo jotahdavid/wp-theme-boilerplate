@@ -8,3 +8,9 @@ node_modules/
 
 # Ignore Mac/OSX file
 .DS_Store
+
+# Ignore lock files
+*.lock
+
+# Ignore zip files
+*.zip
