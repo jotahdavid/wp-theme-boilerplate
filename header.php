@@ -29,8 +29,8 @@
     <div class="header container">
       <div class="header-logo">
         <a target="_blank" href="https://advbox.com.br/software-juridico"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/advbox-logo.svg" alt="Logotipo ADVBOX"></a>
-        <a href="https://blog.advbox.com.br">
-          <p class="link-blog">Blog</p>
+        <a href="https://guia.advbox.com.br">
+          <p class="link-blog">Guia</p>
         </a>
       </div>
 
