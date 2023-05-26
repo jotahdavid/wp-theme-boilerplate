@@ -37,7 +37,7 @@ body {
 }
 
 .h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem !important;
   line-height: 3.75rem;
@@ -590,26 +590,43 @@ img {
   font-size: 1.25rem;
 }
 
+#post {
+  padding-top: 80px;
+}
+
 #article-content-advbox {
-  grid-column: span 3;
+  grid-column: span 4;
   background-color: tomato;
 }
 
 #aside-right {
-  margin-top: 60px;
+  background-color: yellow;
 }
-#aside-right .h2 {
+
+#aside-left .h2 {
   font-size: 1rem !important;
+  line-height: 100%;
   color: #7b8690;
 }
-#aside-right li:hover {
+#aside-left li {
+  padding: 10px 0;
+}
+#aside-left li:hover {
   background-color: #f3f7fc;
 }
-#aside-right li a {
+#aside-left li.active {
+  background-color: #f3f7fc;
+}
+#aside-left li.active h2 {
+  font-weight: 700;
+  color: #095092;
+}
+#aside-left a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-#aside-right li img {
+#aside-left img {
   max-width: 24px;
+  margin-right: 5px;
 }

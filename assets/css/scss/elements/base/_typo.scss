@@ -84,7 +84,7 @@
 }
 
 .h2 {
-  font-weight: 300;
+  font-weight: 400;
   @include typeface-1(h2, desktop);
   @include responsive(s) {
     @include typeface-1(h2, mobile);

@@ -1,20 +1,29 @@
-#aside-right {
-  margin-top: 60px;
+#aside-left {
   .h2 {
     font-size: 1rem !important;
+    line-height: 100%;
     color: #7b8690;
   }
   li {
+    padding: 10px 0;
     &:hover {
       background-color: #f3f7fc;
     }
-    a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
+    &.active {
+      background-color: #f3f7fc;
+      h2 {
+        font-weight: 700;
+        color: $blue-normal;
+      }
     }
-    img {
-      max-width: 24px;
-    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  img {
+    max-width: 24px;
+    margin-right: 5px;
   }
 }

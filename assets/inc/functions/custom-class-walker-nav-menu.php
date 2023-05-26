@@ -115,7 +115,7 @@ class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 		$item_output  = "\n" . $args->before;
 		$item_output .= '<a' . $attributes . '>';
-		$item_output .= $args->link_before . '<span>' . $title . '</span>' . $args->link_after;
+		// $item_output .= $args->link_before . '<span>' . $title . '</span>' . $args->link_after;
 
 		$item_output .= '</a>';
     $item_output .= "\n";
