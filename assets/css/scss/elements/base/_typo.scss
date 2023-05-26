@@ -1,54 +1,58 @@
-// Tipografia Fragment Serif
+// Tipografia Poppins
 @mixin typeface-1($size, $device: desktop) {
-  font-family: "Fragment Serif", serif;
+  font-family: "Poppins", sans-serif;
 
   // h1
   @if $size == h1 and $device == desktop {
-    font-size: 5rem;
+    font-size: 3rem !important;
     line-height: 120%;
   } @else if $size == h1 and $device == mobile {
-    font-size: 3.5rem;
+    font-size: 2rem !important;
     line-height: 120%;
   }
 
   // H2
   @if $size == h2 and $device == desktop {
-    font-size: 3rem;
-    line-height: 140%;
-  } @else if $size == h2 and $device == mobile {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
     line-height: 3.75rem;
+  } @else if $size == h2 and $device == mobile {
+    // font-size: 2.5rem;
+    // line-height: 3.75rem;
   }
-
-  // H5
-  @else if $size == h5 and $device == desktop {
-    font-size: 1.5rem;
-    line-height: 150%;
-  } @else if $size == h5 and $device == mobile {
-    font-size: 1.5rem;
-    line-height: 150%;
-  }
-}
-
-// Tipografia Fragment Regular
-@mixin typeface-2($size, $device: desktop) {
-  font-family: "Fragment Regular", sans-serif;
 
   // H3
-  @if $size == h3 and $device == desktop {
-    font-size: 1.25rem;
-    line-height: 140%;
+  @else if $size == h3 and $device == desktop {
+    font-size: 1.5rem !important;
+    line-height: 2rem;
   } @else if $size == h3 and $device == mobile {
-    font-size: 1.125rem;
-    line-height: 120%;
+    // font-size: 24px;
+    // line-height: 120%;
   }
 
   // H4
   @else if $size == h4 and $device == desktop {
-    font-size: 1.25rem;
-    line-height: 140%;
+    font-size: 1.125rem !important;
+    line-height: 120%;
   } @else if $size == h4 and $device == mobile {
-    font-size: 1.125rem;
+    // font-size: 22px;
+    // line-height: 120%;
+  }
+
+  // H5
+  @else if $size == h5 and $device == desktop {
+    font-size: 1.25rem !important;
+    line-height: 120%;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  // H6
+  @else if $size == h6 and $device == desktop {
+    font-size: 1.625rem !important;
+    line-height: 120%;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 1.25rem !important;
     line-height: 120%;
   }
 
@@ -66,14 +70,13 @@
     font-size: 1.25rem;
     line-height: 100%;
   } @else if $size == a1 and $device == mobile {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 100%;
   }
 }
 
 .h1 {
-  font-weight: 700;
-  color: $white;
+  font-weight: 500;
   @include typeface-1(h1, desktop);
   @include responsive(s) {
     @include typeface-1(h1, mobile);
@@ -81,7 +84,7 @@
 }
 
 .h2 {
-  color: $black;
+  font-weight: 300;
   @include typeface-1(h2, desktop);
   @include responsive(s) {
     @include typeface-1(h2, mobile);
@@ -89,46 +92,55 @@
 }
 
 .h3 {
-  font-weight: 400;
-  @include typeface-2(h3, desktop);
+  font-weight: 300;
+  @include typeface-1(h3, desktop);
   @include responsive(s) {
-    @include typeface-2(h3, mobile);
+    @include typeface-1(h3, mobile);
   }
 }
 
 .h4 {
-  font-weight: 300;
-  @include typeface-2(h4, desktop);
+  font-weight: 500;
+  @include typeface-1(h4, desktop);
   @include responsive(s) {
-    @include typeface-2(h4, mobile);
+    @include typeface-1(h4, mobile);
   }
 }
 
 .h5 {
-  font-weight: 700;
+  font-weight: 300;
+  color: #7d7d7d;
   @include typeface-1(h5, desktop);
   @include responsive(s) {
     @include typeface-1(h5, mobile);
   }
 }
 
+.h6 {
+  font-weight: 500;
+  color: $black;
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+}
+
 p {
   font-weight: 300;
-  @include typeface-2(p, desktop);
+  @include typeface-1(p, desktop);
   @include responsive(s) {
-    @include typeface-2(p, mobile);
+    @include typeface-1(p, mobile);
   }
 }
 
 a {
-  @include typeface-2(a1, desktop);
+  color: inherit !important;
+  font-weight: unset !important;
+  background: unset !important;
+  @include typeface-1(a1, desktop);
   @include responsive(s) {
-    @include typeface-2(a1, mobile);
+    @include typeface-1(a1, mobile);
   }
-}
-
-.txt-italic {
-  font-style: italic;
 }
 
 // BOTÕES
