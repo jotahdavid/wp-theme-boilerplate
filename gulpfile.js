@@ -8,14 +8,14 @@ const browserSync = require('browser-sync').create();
 
 function compilaSass() {
   return gulp
-    .src(path.join(__dirname, 'assets', 'css', '**', '*.scss'))
+    .src('assets/css/**/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(
       autoprefixer({
         cascade: false,
       })
     )
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest(path.join(__dirname, 'assets', 'css')))
     .pipe(browserSync.stream());
 }
 
@@ -37,9 +37,11 @@ gulp.task('browser-sync', browser);
 
 function watch() {
   compilaSass();
-  gulp.watch(path.join(__dirname, 'assets', 'css', '**', '*.scss'), gulp.parallel('sass'));
   gulp
-    .watch(['*.php', '*.html', '**/*.js', path.join(__dirname, 'assets', 'css', '*.css')])
+    .watch('assets/css/**/*.scss')
+    .on('change', gulp.parallel('sass'));
+  gulp
+    .watch(['**/*.php', '*.html', '**/*.js', 'assets/css/*.css'])
     .on('change', browserSync.reload);
 }
 
