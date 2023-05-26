@@ -1,6 +1,6 @@
 <?php
 
-function get_property($obj, $keys, $fallback_value = null) {
+function get_prop($obj, $keys, $fallback_value = null) {
   $is_key_array = gettype($keys) === 'array';
 
   if ($is_key_array && count($keys) === 0) {
@@ -16,7 +16,7 @@ function get_property($obj, $keys, $fallback_value = null) {
   $obj_value = gettype($obj) === 'object' ? $obj->$key : $obj[$key];
 
   if ($is_key_array && count($keys) > 1) {
-    return get_property($obj_value, array_slice($keys, 1));
+    return get_prop($obj_value, array_slice($keys, 1));
   }
 
   return $obj_value;
