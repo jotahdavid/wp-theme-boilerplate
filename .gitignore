@@ -14,3 +14,7 @@ node_modules/
 
 # Ignore zip files
 *.zip
+
+# Ignore env files
+.env
+.env.development
