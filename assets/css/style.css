@@ -196,6 +196,10 @@ a {
   }
 }
 
+.ul {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   -o-object-fit: cover;
@@ -243,6 +247,12 @@ img {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
 }
 
 .ul {
@@ -580,11 +590,16 @@ img {
   font-size: 1.25rem;
 }
 
+#article-content-advbox {
+  grid-column: span 3;
+  background-color: tomato;
+}
+
 #aside-right {
   margin-top: 60px;
 }
 #aside-right .h2 {
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: #7b8690;
 }
 #aside-right li:hover {

@@ -9,6 +9,10 @@
   }
 }
 
+.ul {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
@@ -49,6 +53,16 @@ img {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+  // @include responsive(s) {
+  //   grid-template-columns: 1fr;
+  //   gap: 20px;
+  // }
 }
 
 .ul {
