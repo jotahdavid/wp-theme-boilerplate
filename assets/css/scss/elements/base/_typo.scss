@@ -1,0 +1,185 @@
+// Tipografia Fragment Serif
+@mixin typeface-1($size, $device: desktop) {
+  font-family: "Fragment Serif", serif;
+
+  // h1
+  @if $size == h1 and $device == desktop {
+    font-size: 5rem;
+    line-height: 120%;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 3.5rem;
+    line-height: 120%;
+  }
+
+  // H2
+  @if $size == h2 and $device == desktop {
+    font-size: 3rem;
+    line-height: 140%;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+
+  // H5
+  @else if $size == h5 and $device == desktop {
+    font-size: 1.5rem;
+    line-height: 150%;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+}
+
+// Tipografia Fragment Regular
+@mixin typeface-2($size, $device: desktop) {
+  font-family: "Fragment Regular", sans-serif;
+
+  // H3
+  @if $size == h3 and $device == desktop {
+    font-size: 1.25rem;
+    line-height: 140%;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  // H4
+  @else if $size == h4 and $device == desktop {
+    font-size: 1.25rem;
+    line-height: 140%;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 1.125rem;
+    line-height: 120%;
+  }
+
+  // p
+  @else if $size == p and $device == desktop {
+    font-size: 1.125rem;
+    line-height: 140%;
+  } @else if $size == p and $device == mobile {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+
+  // a
+  @else if $size == a1 and $device == desktop {
+    font-size: 1.25rem;
+    line-height: 100%;
+  } @else if $size == a1 and $device == mobile {
+    font-size: 1.25rem;
+    line-height: 100%;
+  }
+}
+
+.h1 {
+  font-weight: 700;
+  color: $white;
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+.h2 {
+  color: $black;
+  @include typeface-1(h2, desktop);
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+}
+
+.h3 {
+  font-weight: 400;
+  @include typeface-2(h3, desktop);
+  @include responsive(s) {
+    @include typeface-2(h3, mobile);
+  }
+}
+
+.h4 {
+  font-weight: 300;
+  @include typeface-2(h4, desktop);
+  @include responsive(s) {
+    @include typeface-2(h4, mobile);
+  }
+}
+
+.h5 {
+  font-weight: 700;
+  @include typeface-1(h5, desktop);
+  @include responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+}
+
+p {
+  font-weight: 300;
+  @include typeface-2(p, desktop);
+  @include responsive(s) {
+    @include typeface-2(p, mobile);
+  }
+}
+
+a {
+  @include typeface-2(a1, desktop);
+  @include responsive(s) {
+    @include typeface-2(a1, mobile);
+  }
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+// BOTÕES
+.btn {
+  font-size: 1.25rem;
+  line-height: 120%;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-pri {
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-weight: 700 !important;
+  &::after {
+    content: "➞";
+    margin-left: 10px;
+  }
+}
+
+.btn-sec {
+  background: linear-gradient(244.87deg, #5f94df -16.34%, #115fa8 62.79%);
+  display: inline-flex;
+  padding: 1rem 3rem;
+  color: $white;
+
+  img {
+    margin-left: 10px;
+  }
+}
+
+.btn-blue {
+  color: $white !important;
+}
+
+.btn-white {
+  background: $white;
+  color: $black;
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  font-weight: 300;
+}
+
+.btn-arrow {
+  display: inline-block;
+  transition: 0.3s;
+  img {
+    margin-left: 10px;
+    transform: scale(1.5);
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}

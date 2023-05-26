@@ -1,53 +1,27 @@
-const path = require('path');
-
-require('dotenv').config({ path: '.env.development' });
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
-const browserSync = require('browser-sync').create();
+const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const autoprefixer = require("gulp-autoprefixer");
 
 function compilaSass() {
   return gulp
-    .src(path.join(__dirname, 'assets', 'css', '**', '*.scss'))
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .src("assets/css/scss/**/*.scss")
+    .pipe(sass())
     .pipe(
       autoprefixer({
+        browsers: ["last 2 versions"],
         cascade: false,
       })
     )
-    .pipe(gulp.dest('assets/css'))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest("./"));
 }
 
-gulp.task('sass', compilaSass);
-
-function browser() {
-  const { URL_LOCAL } = process.env;
-  if (URL_LOCAL) {
-    browserSync.init({
-      proxy: URL_LOCAL,
-      open: false,
-    });
-  } else {
-    console.log('Você não forneceu a "URL_LOCAL", browser-sync não será iniciado!');
-  }
-}
-
-gulp.task('browser-sync', browser);
+gulp.task("sass", compilaSass);
 
 function watch() {
   compilaSass();
-  gulp.watch(path.join(__dirname, 'assets', 'css', '**', '*.scss'), gulp.parallel('sass'));
-  gulp
-    .watch(['*.php', '*.html', '**/*.js', path.join(__dirname, 'assets', 'css', '*.css')])
-    .on('change', browserSync.reload);
+  gulp.watch("assets/css/scss/**/*.scss", compilaSass);
 }
 
-gulp.task('watch', watch);
+gulp.task("watch", watch);
 
-gulp.task('default', gulp.parallel('watch', 'browser-sync'));
-
-process.on('exit', function () {
-  gulp.removeAllListeners();
-  browserSync.exit();
-});
+gulp.task("default", gulp.parallel("watch"));

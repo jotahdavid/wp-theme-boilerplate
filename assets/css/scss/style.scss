@@ -1,0 +1,18 @@
+// BASE
+@import "./base";
+@import "./elements/base/typo";
+@import "./elements/base/main";
+@import "./elements/base/header";
+@import "./elements/base/footer";
+
+// SEÇÕES
+@import "./elements/home/hero";
+@import "./elements/home/portfolio";
+@import "./elements/home/clientes";
+@import "./elements/home/metodologia";
+
+// INC
+@import "./elements/inc/mapping";
+
+// OTHERS
+@import "./elements/others/projects";

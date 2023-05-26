@@ -1,0 +1,61 @@
+.container {
+  max-width: $container-xl;
+  margin: 0 auto;
+  border: 2px solid red;
+
+  @include responsive(s) {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.ul {
+  list-style: none;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
