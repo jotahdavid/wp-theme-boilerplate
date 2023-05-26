@@ -7,7 +7,7 @@
       <aside id="aside-right">
         <nav>
           <ul>
-            <li>
+            <li class="active">
               <a href="#">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/nav/flag-black.png" alt="Ícone - ">
                 <h2 class="h2">Começando com a ADVBOX</h2>
