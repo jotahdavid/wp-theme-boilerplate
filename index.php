@@ -40,11 +40,16 @@
           <?php the_content(); ?>
           <div class="posts-maps">
             <nav>
-              <ul>
+              <ul class="ul">
                 <li class="posts-prev">
                   <a href="#">
-                    <span>Anterior</span>
-                    <p>Meta-Acordos da Organização Orgânica</p>
+                    <div class="arrow">
+                      <img src="" alt="">
+                    </div>
+                    <div>
+                      <span>Anterior</span>
+                      <p>Meta-Acordos da Organização Orgânica</p>
+                    </div>
                   </a>
                 </li>
                 <li class="posts-next">

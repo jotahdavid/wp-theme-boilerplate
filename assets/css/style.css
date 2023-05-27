@@ -612,6 +612,25 @@ img {
   padding: 40px 0 20px 0;
 }
 
+.posts-maps ul {
+  display: flex;
+}
+.posts-maps li {
+  border: 1px solid #aaa;
+  transition: 0.3s;
+  padding: 10px 20px;
+}
+.posts-maps li:hover {
+  box-shadow: 0px 12px 13px rgba(0, 0, 0, 0.02);
+  transform: translateY(-2px);
+}
+.posts-maps a {
+  text-decoration: none;
+}
+.posts-maps span {
+  font-size: 0.75rem;
+}
+
 #aside-right {
   background-color: yellow;
 }
