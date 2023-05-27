@@ -596,7 +596,20 @@ img {
 
 #article-content-advbox {
   grid-column: span 4;
-  background-color: tomato;
+  padding: 0 80px;
+  color: #3b454e;
+}
+#article-content-advbox h1 {
+  color: #3b454e;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+}
+#article-content-advbox h2 {
+  color: #095092;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding: 40px 0 20px 0;
 }
 
 #aside-right {

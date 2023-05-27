@@ -38,6 +38,24 @@
 
         <article id="article-content-advbox">
           <?php the_content(); ?>
+          <div class="posts-maps">
+            <nav>
+              <ul>
+                <li class="posts-prev">
+                  <a href="#">
+                    <span>Anterior</span>
+                    <p>Meta-Acordos da Organização Orgânica</p>
+                  </a>
+                </li>
+                <li class="posts-next">
+                  <a href="#">
+                    <span>Próximo</span>
+                    <p>Padrões</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </article>
 
         <aside id="aside-right"></aside>
