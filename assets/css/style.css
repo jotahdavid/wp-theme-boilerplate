@@ -196,10 +196,6 @@ a {
   }
 }
 
-.ul {
-  list-style: none;
-}
-
 img {
   max-width: 100%;
   -o-object-fit: cover;
@@ -262,6 +258,10 @@ img {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.border {
+  border-radius: 4px;
 }
 
 #header {

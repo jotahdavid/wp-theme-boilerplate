@@ -41,7 +41,7 @@
           <div class="posts-maps">
             <nav>
               <ul class="ul">
-                <li class="posts-prev">
+                <li class="posts-prev border">
                   <a href="#">
                     <div class="arrow">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/arrow.svg" alt="Postagem Anterior">
@@ -52,7 +52,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="posts-next">
+                <li class="posts-next border">
                   <a href="#">
                     <span>Próximo</span>
                     <p>Padrões</p>
