@@ -38,7 +38,7 @@
 
         <article id="article-content-advbox">
           <?php the_content(); ?>
-          <div class="posts-maps">
+          <div class="posts-footer">
             <nav>
               <ul class="ul">
                 <li class="posts-prev border">
@@ -65,6 +65,10 @@
                 </li>
               </ul>
             </nav>
+          </div>
+          <div class="posts-copy">
+            <p>Última modificação 5 dias atrás</p>
+            <p>Desenvolvido por <a href="https://advbox.com.br/software-juridico">ADVBOX</a></p>
           </div>
         </article>
 

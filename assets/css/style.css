@@ -596,7 +596,7 @@ img {
 
 #article-content-advbox {
   grid-column: span 4;
-  padding: 0 80px;
+  padding: 0 100px;
   color: #3b454e;
 }
 #article-content-advbox h1 {
@@ -612,46 +612,48 @@ img {
   padding: 40px 0 20px 0;
 }
 
-.posts-maps {
+.posts-footer {
   margin: 40px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(227, 232, 237);
 }
-.posts-maps ul {
+.posts-footer ul {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
-.posts-maps li {
-  border: 1px solid #aaa;
+.posts-footer li {
+  border: 1px solid rgb(227, 232, 237);
   transition: 0.3s;
   width: 100%;
 }
-.posts-maps li:hover {
+.posts-footer li:hover {
   box-shadow: 0px 12px 13px rgba(0, 0, 0, 0.02);
   transform: translateY(-2px);
 }
-.posts-maps li:hover p {
+.posts-footer li:hover p {
   color: #095092;
 }
-.posts-maps a {
+.posts-footer a {
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
 }
-.posts-maps a img {
-  width: 20px;
+.posts-footer a img {
+  width: 25px;
 }
-.posts-maps span {
+.posts-footer span {
   font-size: 0.75rem;
   color: #aaa;
 }
-.posts-maps p {
+.posts-footer p {
   font-weight: 500;
 }
-.posts-maps .posts-prev {
+.posts-footer .posts-prev {
   text-align: right;
 }
-.posts-maps .posts-prev img {
+.posts-footer .posts-prev img {
   transform: rotate(180deg);
 }
 
