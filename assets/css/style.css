@@ -628,7 +628,7 @@ img {
 }
 .posts-footer li:hover {
   box-shadow: 0px 12px 13px rgba(0, 0, 0, 0.02);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 .posts-footer li:hover p {
   color: #095092;
@@ -655,6 +655,24 @@ img {
 }
 .posts-footer .posts-prev img {
   transform: rotate(180deg);
+}
+
+.posts-footer-copy {
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+}
+.posts-footer-copy p {
+  font-size: 0.875rem;
+}
+.posts-footer-copy a {
+  font-size: inherit;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.posts-footer-copy a:hover {
+  text-decoration: underline;
+  color: #3d3d3d !important;
 }
 
 #aside-right {

@@ -66,9 +66,9 @@
               </ul>
             </nav>
           </div>
-          <div class="posts-copy">
+          <div class="posts-footer-copy">
             <p>Última modificação 5 dias atrás</p>
-            <p>Desenvolvido por <a href="https://advbox.com.br/software-juridico">ADVBOX</a></p>
+            <a target="_blank" href="https://advbox.com.br/software-juridico">Desenvolvido por ADVBOX</a>
           </div>
         </article>
 
