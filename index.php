@@ -9,25 +9,25 @@
             <ul class="ul">
               <li>
                 <a href="#">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/nav/flag-black.png" alt="Ícone - ">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/sidebar/flag-black.png" alt="Ícone - ">
                   <h2 class="h2">Começando com a ADVBOX</h2>
                 </a>
               </li>
               <li class="active">
                 <a href="#">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/nav/configuracoes.png" alt="Ícone - ">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/sidebar/configuracoes.png" alt="Ícone - ">
                   <h2 class="h2">Configurações</h2>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/nav/meu-painel.png" alt="Ícone - ">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/sidebar/meu-painel.png" alt="Ícone - ">
                   <h2 class="h2">Meu Painel</h2>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/nav/pessoas.png" alt="Ícone - ">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/sidebar/pessoas.png" alt="Ícone - ">
                   <h2 class="h2">Pessoas</h2>
                 </a>
               </li>
@@ -44,7 +44,7 @@
                 <li class="posts-prev">
                   <a href="#">
                     <div class="arrow">
-                      <img src="" alt="">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/arrow.svg" alt="Postagem Anterior">
                     </div>
                     <div>
                       <span>Anterior</span>

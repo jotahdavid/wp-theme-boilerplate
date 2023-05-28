@@ -612,23 +612,47 @@ img {
   padding: 40px 0 20px 0;
 }
 
+.posts-maps {
+  margin: 40px 0;
+}
 .posts-maps ul {
   display: flex;
+  gap: 40px;
 }
 .posts-maps li {
   border: 1px solid #aaa;
   transition: 0.3s;
+  width: 100%;
   padding: 10px 20px;
 }
 .posts-maps li:hover {
   box-shadow: 0px 12px 13px rgba(0, 0, 0, 0.02);
   transform: translateY(-2px);
 }
+.posts-maps li:hover p {
+  color: #095092;
+}
 .posts-maps a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
+}
+.posts-maps a img {
+  width: 20px;
 }
 .posts-maps span {
   font-size: 0.75rem;
+  color: #aaa;
+}
+.posts-maps p {
+  font-weight: 500;
+}
+.posts-maps .posts-prev {
+  text-align: right;
+}
+.posts-maps .posts-prev img {
+  transform: rotate(180deg);
 }
 
 #aside-right {
