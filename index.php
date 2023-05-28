@@ -53,9 +53,14 @@
                   </a>
                 </li>
                 <li class="posts-next border">
-                  <a href="#">
-                    <span>Próximo</span>
-                    <p>Padrões</p>
+                <a href="#">
+                    <div>
+                      <span>Próximo</span>
+                      <p>Padrões</p>
+                    </div>
+                    <div class="arrow">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/arrow.svg" alt="Próxima Postagem">
+                    </div>
                   </a>
                 </li>
               </ul>

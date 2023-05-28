@@ -623,7 +623,6 @@ img {
   border: 1px solid #aaa;
   transition: 0.3s;
   width: 100%;
-  padding: 10px 20px;
 }
 .posts-maps li:hover {
   box-shadow: 0px 12px 13px rgba(0, 0, 0, 0.02);
@@ -633,6 +632,7 @@ img {
   color: #095092;
 }
 .posts-maps a {
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
