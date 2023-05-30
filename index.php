@@ -18,6 +18,14 @@
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/sidebar/configuracoes.png" alt="Ícone - ">
                   <h2 class="h2">Configurações</h2>
                 </a>
+                <ul class="ul post-drop">
+                  <li>
+                    <a href="#">Antipadrões</a>
+                  </li>
+                  <li>
+                    <a href="#">Antipadrões</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="#">
@@ -53,7 +61,7 @@
                   </a>
                 </li>
                 <li class="posts-next border">
-                <a href="#">
+                  <a href="#">
                     <div>
                       <span>Próximo</span>
                       <p>Padrões</p>
